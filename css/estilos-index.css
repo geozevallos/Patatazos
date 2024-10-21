@@ -144,7 +144,7 @@ nav a:hover {
 
 /* Estilos de las tarjetas */
 .card {
-    width: 20%; /* Tamaño de la tarjeta */
+    width: 15%; /* Tamaño de la tarjeta */
     margin: 15px;
     border-radius: 6px;
     background: #000; /* Fondo negro */
@@ -155,6 +155,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card:hover {
@@ -163,9 +164,14 @@ nav a:hover {
 }
 
 .card img {
-    width: 85%;
-    height: auto;
-    padding-left: 7.5%;
+    width: 95%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+    
+    
+    
 }
 
 /* Estilos de los títulos h3 dentro de las tarjetas */
