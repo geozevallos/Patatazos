@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/detalle-pelicula.css" />
   </head>
   <body>
     <header></header>
@@ -56,14 +56,12 @@
           </section>
           <nav class="menu">
             <ul>
-              <li>Reparto y equipo</li>
-              <li>Reseñas</li>
-              <li>Noticias relacionadas</li>
-              <li>Fotos</li>
+              <li><a href="#repato-equipo">Reparto y equipo</a></li>
+              <li><a href="#reviews">Reseñas</a></li>
             </ul>
           </nav>
           <section class="actores-section">
-            <h3>REPARTO Y EQUIPO</h3>
+            <h3 id="repato-equipo">REPARTO Y EQUIPO</h3>
             <div class="img-actors-container">
               <div class="img-actors">
                 <img
@@ -103,7 +101,7 @@
             </div>
           </section>
           <section class="reviews-container">
-            <h3>Reseña crítica</h3>
+            <h3 id="reviews">RESEÑAS</h3>
             <article class="card-reviews-container">
               <div class="card-review">
                 <div class="header-review">
@@ -113,15 +111,54 @@
                       alt="avatar del usuario"
                     />
                   </figure>
-                  <p class="username">Usuario 55</p>
+                  <p class="username">Camilo 66</p>
                 </div>
                 <div class="content-review">
+                  <h4>Impactante y conmovedora</h4>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi fugiat quis quisquam quod unde ratione voluptatem
-                    excepturi dolorem reprehenderit laudantium reiciendis
-                    eligendi, eveniet sint, quibusdam, voluptatibus rerum
-                    mollitia? Quidem, obcaecati?
+                    La Hija de la Laguna es un documental poderoso que expone el conflicto entre las comunidades indígenas y las grandes corporaciones mineras en Perú. A través de la historia de Nélida, una mujer que siente una conexión espiritual con el agua, el film destaca la importancia de proteger los recursos naturales y las tradiciones ancestrales.
+                  </p>
+                </div>
+                <div class="footer-review">
+                  <p>Calificacion 5/5 - 13/10/2024</p>
+                  <a href="">Reseña completa</a>
+                </div>
+              </div>
+              <div class="card-review">
+                <div class="header-review">
+                  <figure>
+                    <img
+                      src="../imagenes/default-user.png"
+                      alt="avatar del usuario"
+                    />
+                  </figure>
+                  <p class="username">Pedro Torres</p>
+                </div>
+                <div class="content-review">
+                  <h4>Visualmente hermoso y socialmente relevante</h4>
+                  <p>
+                    La Hija de la Laguna combina una cinematografía impresionante con una historia de resistencia y lucha por la justicia ambiental. A través de la conexión emocional de Nélida con la laguna, la película muestra cómo la defensa del agua es también la defensa de la vida misma en las comunidades rurales de Perú.
+                  </p>
+                </div>
+                <div class="footer-review">
+                  <p>Calificacion 5/5 - 13/10/2024</p>
+                  <a href="">Reseña completa</a>
+                </div>
+              </div>
+              <div class="card-review">
+                <div class="header-review">
+                  <figure>
+                    <img
+                      src="../imagenes/default-user.png"
+                      alt="avatar del usuario"
+                    />
+                  </figure>
+                  <p class="username">José Gutierrez</p>
+                </div>
+                <div class="content-review">
+                  <h4>Un llamado urgente a la preservación</h4>
+                  <p>
+                    Este documental nos sumerge en la lucha de las comunidades andinas por preservar sus lagunas frente a la amenaza de la minería. Con imágenes impresionantes y una narrativa que mezcla espiritualidad y realidad social, La Hija de la Laguna es un grito a favor del medio ambiente y los derechos de los pueblos originarios.
                   </p>
                 </div>
                 <div class="footer-review">
@@ -133,8 +170,39 @@
           </section>
         </article>
         <aside>
-          <div><h3>Que ver</h3></div>
-          <div></div>
+          <h3>Películas relacionadas</h3>
+          <div class="card-otras-peliculas">
+            <figure>
+              <img src="https://cdn.www.gob.pe/uploads/document/file/198345/Afiche_de_Wi%C3%B1aypacha_Prensa.jpg" alt="">
+            </figure>
+            <figcaption>
+              Wiñaypacha (2017)
+            </figcaption>
+          </div>
+          <div class="card-otras-peliculas">
+            <figure>
+              <img src="https://pics.filmaffinity.com/El_perro_del_hortelano-877977129-mmed.jpg" alt="">
+            </figure>
+            <figcaption>
+              El Perro del Hortelano (2009)
+            </figcaption>
+          </div>
+          <div class="card-otras-peliculas">
+            <figure>
+              <img src="https://www.collectiveeye.org/cdn/shop/products/THE_EYES_OF_THE_JOURNEY_POSTER_1200x1200.png?v=1575931787" alt="">
+            </figure>
+            <figcaption>
+              Los Ojos del Camino (2016)
+            </figcaption>
+          </div>
+          <div class="card-otras-peliculas">
+            <figure>
+              <img src="https://www.retinalatina.org/wp-content/uploads/2016/08/po_semillas.jpg" alt="">
+            </figure>
+            <figcaption>
+              Semillas del cambio (2019)
+            </figcaption>
+          </div>          
         </aside>
       </div>
     </main>
