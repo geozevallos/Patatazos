@@ -23,6 +23,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #000000;
+    width: 100%;
 }
 
 .logo-container {
@@ -55,12 +56,14 @@ h2 {
     display: flex;
     justify-content: center;
     flex-grow: 1; /* Para expandir el espacio entre logo y menú */
+
 }
 
 .menu-horizontal {
     list-style: none;
     display: flex;
     gap: 20px;
+
 }
 
 .menu-horizontal li {
@@ -170,7 +173,7 @@ nav a:hover {
 
 /* Estilos de los títulos h3 dentro de las tarjetas */
 .card .contenido h3 {
-    width: 95%; /* Ocupan más espacio dentro de la tarjeta */
+    width: 100%;/* Ocupan más espacio dentro de la tarjeta */
     margin: 0 0; /* Centrado horizontalmente */
     text-align: center; /* Texto centrado */
     color: aliceblue; /* Color del texto */
