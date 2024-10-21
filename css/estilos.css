@@ -1,0 +1,152 @@
+body {
+    background-color: darkblue;
+}
+
+.formulario-registro {
+    background-color: rgb(40, 40, 175);
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
+}
+
+.rellenar {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.controls {
+    width: 100%;
+    background-color: rgb(40, 40, 175);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid whitesmoke;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+button {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+#enviar {
+    background-color: #03A9F4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2%;
+}
+
+#enviar:hover {
+    transform: scale(1.05);
+}
+
+#resetear {
+    background-color: rgb(221, 87, 9);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 4%;
+}
+
+#resetear:hover {
+    transform: scale(1.05);
+}
+
+i {
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#botones button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Esto sirve para que el autocompletado no cambie el color de fondo ni la letra
+   ya que lo cambia de manera predeterminada a fondo blanco y letras negras */
+input[type="email"]:-webkit-autofill {
+    background-color: rgb(40, 40, 175) !important;
+    color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(40, 40, 175) inset;
+    box-shadow: 0 0 0px 1000px rgb(40, 40, 175) inset;
+}
+
+input[type="email"]:-webkit-autofill::first-line {
+    color: white !important;
+}
+
+
+footer{
+    font-size:1em;
+    color:#30b0e5;
+    text-align:left;
+    margin: left 0.35em;
+    display: block;
+    unicode-bidi: isolate;
+    border-top: auto auto;
+    max-width: 99%px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #020648;
+    justify-content: space-around;
+    align-items: center;
+       
+
+}
+hr{
+    max-width: 99%;
+    margin-left: 1%; 
+
+}
+
+
+.titulo-footer{
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 1%;   
+    padding-top: 15px;
+
+
+}
+.redes{
+    display: inline-block;
+
+    margin-left: 1%;
+
+
+}
+.aviso{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+

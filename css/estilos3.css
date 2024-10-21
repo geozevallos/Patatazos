@@ -1,0 +1,121 @@
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: darkblue
+}
+.titulo-pagina{
+    background-color: white;
+    color: darkblue;
+    text-align: center;
+}
+.contenedor-titulo{
+    background-color: white;
+    color: #000dff;
+    text-align: center;
+
+}
+
+.reseña{
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
+    background-color: white;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+img,p{
+    padding: 10px;
+}
+p{
+    position: relative;
+    text-align: justify;
+}
+.like-container {
+    display: flex;
+    position: absolute;
+    padding-top: 20px;
+    bottom:  7%;
+    left: 158px;
+
+    
+}
+.like-contenedor input{
+    display: none;
+}
+
+.like-container input {
+    display: none; /* Oculta el checkbox */
+}
+.contenedor-like input{
+    display: none;
+}
+
+.like-container label {
+    font-size: 25px; /* Tamaño del ícono de like */
+    color: #000000; /* Color inicial del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+    display: flex; /* Usa flexbox para alinear el ícono y el texto en una fila */
+
+}
+.like-contenedor label{
+    margin-left: 10px;
+    
+}
+
+.like-container label span {
+    font-size: 15px; /* Tamaño del texto "like" */
+    margin-left: 5px; /* Espacio entre el ícono y el texto */
+    color: #000000; /* Color inicial del texto */
+    transition: color 0.3s ease; /* Suaviza la transición del color del texto */
+
+
+}
+.like-contenedor label span{
+    font-size: 15px;
+    color: #000000;
+    
+}
+
+
+.contenedor-like label span{
+    font-size: 15px; /* Tamaño del texto "like" */
+    color: #000000; /* Color inicial del texto */
+}
+.contenedor-texto{
+    margin-bottom: 5px;
+}
+.like-container span{
+    padding-top: 4px;
+
+}
+span{
+    font-size: 50px;
+}
+pre{
+    font-size: 50px;
+}
+.like-container input:checked + label {
+    color: #0d00ff; /* Cambia el color del ícono al hacer clic */
+}
+
+.like-container input:checked + label span {
+    color: #000dff; 
+}
+
+strong{
+    font-size: 20px;
+}
+
