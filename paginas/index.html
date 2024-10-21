@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu basico</title>
     <link rel="stylesheet" href="../css/estilos-index.css">
-    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <a href="proyecto_1.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="../imagenes/favicon.png" alt="logo">
                 <h2 class="nombre_empresa">Patatazos</h2>
             </a>
@@ -22,141 +26,259 @@
             <ul class="menu-horizontal">
                 <li>
                     <a href="#" class="nav-link">Inicio</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#subtitulo1">Películas Destacadas</a></li>
+                        <li><a href="#subtitulo2">Últimas Reseñas</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#" class="nav-link">Películas</a>
                     <ul class="menu-vertical">
-                        <li><a href="#">Películas</a></li>
+                        <li><a href="#">Detalle de Películas</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#" class="nav-link">Reseñas</a>
-
+                    <ul class="menu-vertical">
+                        <li><a href="#reseñas1">Reseñas Destacadas</a></li>
+                        <li><a href="#reseñas2">Escribir Reseña</a></li>
+                    </ul>
                 </li>
-
                 <li>
                     <a href="#" class="nav-link">Nosotros</a>
-                    <li><a href="#">Información</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Animes</a></li>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Información</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
-        
-        <div class="buscar">
-            <!-- Buscador va aquí -->
-        </div>
     </header>
+
+    <!--*Aqui empiezan las reseñas-->
+    <section>
+        <h3 id="subtitulo1" class="subtitulo" style="color: aliceblue;">Películas Destacadas</h3>
+        </div>
+
+        <div class="container-resenas">
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="The_Avengers_Poster.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>AVENGERS <br> Era de Ultrón</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Avengers_Age_Of_Ultron_Poster.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>AVENGERS: <br> Era de Ultrón</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Avengers_Infinity_War_-_Póster_oficial.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>AVENGERS: <br> Infinity War</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Avenger_Endgame_Poster_Oficial.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>AVENGERS: <br> End Game</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Captain_America_Civil_War_-_Poster_definitivo.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>CAPTAIN AMERICA <br>The Winter Soldier</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Captain_America_The_Winter_Soldier_Poster_3.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>CAPTAIN AMERICA: <br>The Winter Soldier</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Captain_America_Civil_War_-_Poster_definitivo.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>CAPTAIN AMERICA: <br> Civil War</h3>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <figure>
+                    <a href="#"><img src="Iron_Man_3_Portada.png" alt="poster"></a>
+                </figure>
+
+                <div class="contenido">
+                    <a href="#">
+                        <h3>IRON MAN: 3 <br> <br> </h3>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
     <div>
-        <h3 class="subtitulo" style="color: aliceblue;">ULTIMAS RESEÑAS</h3>
-    </div>
 
-    <div class="container-reseñas">
-        <div class="card">
-            <figure>
-                <a href="#"><img src="The_Avengers_Poster.png" alt="poster"></a>
-            </figure>
+<!--*Reseñas sección*-->
 
-            <div class="contenido">
-                <a href="#">
-                    <h3>AVENGERS</h3>
-                </a>
+        <section class="resena-section">
+            <div class="subtituloreseñas2">
+               <h3 id="subtitulo2" class="subtitulo" style="color: aliceblue;">Últimas Reseñas</h3>  
+            </div>
+           
 
+            <div class="resena">
+                <img src="../imagenes/perfil-de-usuario.webp" alt="Foto de perfil" class="resena-img">
+                <div class="contenedor-texto">
+
+                    <p><strong style="color: blue;">Pueblo Viejo</strong> <strong id="año"
+                            style="color: gray;">(2024)</strong></p>
+                    <p><strong>Una Pelicula Nostalgica</strong></p>
+
+                    <div class="like-contenedor">
+                        <input type="checkbox" id="like2">
+                        <label for="like2" class="fa fa-thumbs-up">
+                            <span>129</span>
+                        </label>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam dignissimos aliquid,
+                        molestias
+                        recusandae incidunt neque voluptas rem asperiores aut impedit atque nihil corporis tempore odit
+                        ea
+                        officia aperiam quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dicta
+                        recusandae
+                        incidunt alias, consequuntur doloribus quasi voluptates sed ipsam, ad temporibus aliquid. Animi
+                        rem dolores
+                        accusamus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi tenetur odio iure veritatis
+                        voluptates quisquam adipisci corporis fuga distinctio. Veritatis molestiae sint quibusdam minus
+                        placeat modi corrupti, reiciendis optio. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magni voluptate optio reprehenderit perferendis. Quia laborum officiis impedit magnam sit
+                        architecto voluptatibus, soluta error, voluptatem illo sequi at repudiandae molestiae beatae.
+                    </p>
+                </div>
             </div>
 
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Avengers_Age_Of_Ultron_Poster.png" alt="poster"></a>
-            </figure>
+            <div class="resena">
+                <img src="../imagenes/perfil-de-usuario.webp" alt="Foto de perfil" class="resena-img">
+                <div class="contenedor-texto">
 
-            <div class="contenido">
-                <a href="#">
-                    <h3>AVENGERS: <br> Era de Ultrón</h3>
-                </a>
+                    <p><strong style="color: blue;">Pueblo Viejo</strong> <strong id="año"
+                            style="color: gray;">(2024)</strong></p>
+                    <p><strong>Una Pelicula Nostalgica</strong></p>
 
+                    <div class="like-contenedor">
+                        <input type="checkbox" id="like2">
+                        <label for="like2" class="fa fa-thumbs-up">
+                            <span>129</span>
+                        </label>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam dignissimos aliquid,
+                        molestias
+                        recusandae incidunt neque voluptas rem asperiores aut impedit atque nihil corporis tempore odit
+                        ea
+                        officia aperiam quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dicta
+                        recusandae
+                        incidunt alias, consequuntur doloribus quasi voluptates sed ipsam, ad temporibus aliquid. Animi
+                        rem dolores
+                        accusamus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi tenetur odio iure veritatis
+                        voluptates quisquam adipisci corporis fuga distinctio. Veritatis molestiae sint quibusdam minus
+                        placeat modi corrupti, reiciendis optio. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magni voluptate optio reprehenderit perferendis. Quia laborum officiis impedit magnam sit
+                        architecto voluptatibus, soluta error, voluptatem illo sequi at repudiandae molestiae beatae.
+                    </p>
+                </div>
             </div>
 
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Avengers_Infinity_War_-_Póster_oficial.png" alt="poster"></a>
-            </figure>
+            <div class="resena">
+                <img src="../imagenes/perfil-de-usuario.webp" alt="Foto de perfil" class="resena-img">
+                <div class="contenedor-texto">
 
-            <div class="contenido">
-                <a href="#">
-                    <h3>AVENGERS: <br> Infinity War</h3>
-                </a>
+                    <p><strong style="color: blue;">Pueblo Viejo</strong> <strong id="año"
+                            style="color: gray;">(2024)</strong></p>
+                    <p><strong>Una Pelicula Nostalgica</strong></p>
 
+                    <div class="like-contenedor">
+                        <input type="checkbox" id="like2">
+                        <label for="like2" class="fa fa-thumbs-up">
+                            <span>129</span>
+                        </label>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam dignissimos aliquid,
+                        molestias
+                        recusandae incidunt neque voluptas rem asperiores aut impedit atque nihil corporis tempore odit
+                        ea
+                        officia aperiam quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dicta
+                        recusandae
+                        incidunt alias, consequuntur doloribus quasi voluptates sed ipsam, ad temporibus aliquid. Animi
+                        rem dolores
+                        accusamus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi tenetur odio iure veritatis
+                        voluptates quisquam adipisci corporis fuga distinctio. Veritatis molestiae sint quibusdam minus
+                        placeat modi corrupti, reiciendis optio. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magni voluptate optio reprehenderit perferendis. Quia laborum officiis impedit magnam sit
+                        architecto voluptatibus, soluta error, voluptatem illo sequi at repudiandae molestiae beatae.
+                    </p>
+                </div>
             </div>
+        </section>
 
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Avenger_Endgame_Poster_Oficial.png" alt="poster"></a>
-            </figure>
 
-            <div class="contenido">
-                <a href="#">
-                    <h3>AVENGERS: <br> End Game</h3>
-                </a>
 
-            </div>
-
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Captain_America_Civil_War_-_Poster_definitivo.png" alt="poster"></a>
-            </figure>
-
-            <div class="contenido">
-                <a href="#">
-                    <h3>CAPTAIN AMERICA</h3>
-                </a>
-
-            </div>
-
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Captain_America_The_Winter_Soldier_Poster_3.png" alt="poster"></a>
-            </figure>
-
-            <div class="contenido">
-                <a href="#">
-                    <h3>CAPTAIN AMERICA: <br>The Winter Soldier</h3>
-                </a>
-
-            </div>
-
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Captain_America_Civil_War_-_Poster_definitivo.png" alt="poster"></a>
-            </figure>
-
-            <div class="contenido">
-                <a href="#">
-                    <h3>CAPTAIN AMERICA: <br> Civil War</h3>
-                </a>
-
-            </div>
-
-        </div>
-        <div class="card">
-            <figure>
-                <a href="#"><img src="Iron_Man_3_Portada.png" alt="poster"></a>
-            </figure>
-
-            <div class="contenido">
-                <a href="#">
-                    <h3>IRON MAN: 3</h3>
-                </a>
-
-            </div>
-
-        </div>
-    </div>
 </body>
 
 </html>
