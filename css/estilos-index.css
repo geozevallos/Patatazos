@@ -1,3 +1,4 @@
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -7,7 +8,7 @@ body {
 a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 img{
@@ -66,12 +67,12 @@ h2 {
     position: relative;
 }
 
-.menu-horizontal > li > a {
+.menu-horizontal  li  a {
     display: block;
-    padding: 15px 35px;
+    padding: 15px 48px;
 }
 
-.menu-horizontal > li:hover {
+.menu-horizontal  li:hover {
     background-color: blue;
 }
 
@@ -85,6 +86,7 @@ h2 {
     padding: 0;
     margin: 0;
     z-index: 100;
+    min-width: 100%;
 }
 
 .menu-horizontal li:hover .menu-vertical {
@@ -130,99 +132,84 @@ nav a:hover {
 
 
 /* Estilos del contenedor de reseñas */
-    .container-reseñas {
+.container-resenas {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-wrap: wrap;
     margin: 0 auto;
-    }
-    
-    /* Estilos de las tarjetas */
-    
-    .card {
-    width: 20%;
+    padding: 20px;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    width: 20%; /* Tamaño de la tarjeta */
     margin: 15px;
     border-radius: 6px;
+    background: #000; /* Fondo negro */
+    box-shadow: 0px 1px 10px rgba(204, 235, 31, 0.2); /* Sombra inicial */
     overflow: hidden;
-    background: #000000;
-    box-shadow: 0px 1px 10px rgba(204, 235, 31, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
+    transition: all 0.4s ease; /* Transición suave */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    
-    .card:hover {
-    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4);
-    transform: translateY(-3%);
-    }
-    
-    .card img {
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4); /* Sombra al hacer hover */
+    transform: translateY(-3%); /* Efecto de levantar */
+}
+
+.card img {
     width: 85%;
     height: auto;
-    align-items: center;
     padding-left: 7.5%;
-    }
-    
-    .card .container-reseñas img {
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .card .container-reseñas {
-    padding: 15px;
-    text-align: center;
-    }
-    
-    .card .container-reseñas h3 {
-    font-weight: 150;
-    text-align: center;
-    align-items: center;
-    padding: 2px;
-    }
-    
-    .card .container-reseñas a {
+}
+
+/* Estilos de los títulos h3 dentro de las tarjetas */
+.card .contenido h3 {
+    width: 95%; /* Ocupan más espacio dentro de la tarjeta */
+    margin: 0 0; /* Centrado horizontalmente */
+    text-align: center; /* Texto centrado */
+    color: aliceblue; /* Color del texto */
+    padding: 10px 0; /* Espaciado vertical */
+    font-weight: 350; /* Grosor del texto */
+    font-size: 1.1em; /* Tamaño del texto */
+}
+
+/* Estilos del enlace que envuelve el h3 */
+.card .contenido a {
     text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    }
-    
-    figure {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Estilos del contenedor de imagen */
+figure {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 680px) {
+    .container-resenas {
+        flex-direction: column;
+        justify-content: center;
     }
-    
-    /* Estilos responsivos */
-    
-    @media (max-width: 680px) {
-    header {
-    flex-direction: column;
-    }
-    nav {
-    padding: 10px 0px;
-    }
-    .container-reseñas {
-    flex-direction: column;
-    justify-content: center;
-    }
+
     .card {
-    width: 80%;
-    align-content: center;
-    text-align: center;
+        width: 80%; /* Las tarjetas ocupan más espacio en pantallas pequeñas */
     }
-    }
-    
-    /* Estilos adicionales */
-    
-    .subtitulo {
+}
+
+/* Estilos adicionales para subtítulos */
+.subtitulo {
     padding-left: 30px;
     font-size: 20px;
-    }
+    color: aliceblue;
+}
