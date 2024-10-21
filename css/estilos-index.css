@@ -11,10 +11,6 @@ a {
     font-size: 1em;
     font-weight: bold;
 }
-img{
-    padding-left: 50px;
-
-}
 
 /* Estilos del header */
 header {
@@ -34,6 +30,7 @@ header {
 .logo img {
     height: 40px;
     margin-right: 10px;
+    padding-left: 40px;
 }
 
 .nombre_empresa {
@@ -43,7 +40,7 @@ header {
 
 h2 {
     padding-left: 0px;
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(204, 204, 101);
     margin-left: 5px;
     margin-bottom: 10px;
@@ -178,7 +175,7 @@ nav a:hover {
     text-align: center; /* Texto centrado */
     color: aliceblue; /* Color del texto */
     padding: 10px 0; /* Espaciado vertical */
-    font-weight: 350; /* Grosor del texto */
+    font-weight: bold; /* Grosor del texto */
     font-size: 1.1em; /* Tamaño del texto */
 }
 
@@ -212,8 +209,9 @@ figure {
 
 /* Estilos adicionales para subtítulos */
 .subtitulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 30px;
-    font-size: 20px;
+    font-size: 25px;
     color: aliceblue;
 }
 
@@ -254,6 +252,7 @@ figure {
 .resena-img {
     width: 100px;
     height: 100px;
+    padding: 0;
     border-radius: 50%;
     margin-bottom: 20px;
 }
