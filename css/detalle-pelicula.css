@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
@@ -12,6 +17,10 @@ body {
 
 main {
   width: 1440px;
+}
+
+h3{
+  margin: 15px;
 }
 
 .film-banner {
@@ -67,6 +76,10 @@ main {
 
 aside {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 article {
@@ -122,6 +135,11 @@ article {
   cursor: pointer;
 }
 
+.menu ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .actores-section {
   margin: 10px;
 }
@@ -171,15 +189,20 @@ article {
 
 .card-reviews-container{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card-review {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid black;
   border-radius: 4px;
+  gap: 5px;
 }
 
 .header-review {
@@ -197,6 +220,10 @@ article {
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.content-review{
+  text-align: justify;
 }
 
 .header-review figure img {
@@ -242,4 +269,33 @@ article {
   font-size: 24px;
   color: rgba(255,255,255,0.8);
   cursor: pointer;
+}
+
+.card-otras-peliculas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 60%;
+  box-shadow: 5px 5px #888888;
+}
+
+.card-otras-peliculas figure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-otras-peliculas figure img{
+  width: 100%;
+}
+
+.card-otras-peliculas figcaption{
+  padding: 5px;
+  text-align: center;
 }
