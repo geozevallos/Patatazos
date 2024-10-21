@@ -1,4 +1,3 @@
-/* Estilos base */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
 a {
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -17,9 +16,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(20, 20, 87);
-    min-height: 70px;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: #0c0666;
 }
 
 .logo-container {
@@ -28,9 +26,13 @@ header {
 }
 
 .logo img {
-    height: 50px;
-    padding-left: 50px;
-    padding-top: 0px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nombre_empresa {
+    color: white;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -42,142 +44,23 @@ h2 {
 /* Estilos del menú */
 .menu {
     display: flex;
-    justify-content: space-around;
-    width: 30%;
-    /* Ajusta el ancho del menú */
-}
-
-.nav-link {
-    margin: 0 10px;
-    display: flex;
-    justify-content: space-around;
-    /* Espaciado entre enlaces */
-}
-
-.buscar {
-    width: 10%;
-    /* Ajusta el ancho del buscador */
-    text-align: right;
-}
-
-nav a:hover {
-    color: yellow;
-}
-
-/* Estilos del contenedor de reseñas */
-.container-reseñas {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Cambiado a 'center' */
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-    margin: 0 auto; /* Añadido para centrar el contenedor */
-}
-
-/* Estilos de las tarjetas */
-.card {
-    width: 20%;
-    margin: 15px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #000000;
-    box-shadow: 0px 1px 10px rgba(204, 235, 31, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    display: flex; /* Añadido para centrar contenido dentro de la tarjeta */
-    flex-direction: column; /* Mantener contenido en columna */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-}
-
-.card:hover {
-    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4);
-    transform: translateY(-3%);
-}
-
-.card img {
-    width: 85%;
-    height: auto;
-    align-items: center;
-    padding-left: 7.5%;
-}
-
-.card .container-reseñas img {
-    align-items: center;
     justify-content: center;
-}
-
-.card .container-reseñas {
-    padding: 15px;
-    text-align: center;
-}
-
-.card .container-reseñas h3 {
-    font-weight: 150;
-    text-align: center;
-    align-items: center;
-    padding: 2px;
-}
-
-.card .container-reseñas a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Añadido para que figure use todo el ancho */
-}
-
-/* Estilos responsivos */
-@media (max-width: 680px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        padding: 10px 0px;
-    }
-
-    .container-reseñas {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        justify-content: center;
-    }
-
-    .card {
-        width: 80%; /* Aumentar el tamaño de la tarjeta en pantallas pequeñas */
-        align-content: center;
-        text-align: center;
-    }
-
-}
-
-.subtitulo {
-    padding-left: 30px;
-    font-size: 20px;
-
+    flex-grow: 1; /* Para expandir el espacio entre logo y menú */
 }
 
 .menu-horizontal {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
-.menu-horizontal > li {
-    position: relative; /* Añadido para que funcione el submenú */
+.menu-horizontal li {
+    position: relative;
 }
 
 .menu-horizontal > li > a {
     display: block;
-    padding: 15px 35px; /* Cambiar padding para mejorar apariencia */
+    padding: 15px 35px;
 }
 
 .menu-horizontal > li:hover {
@@ -185,22 +68,23 @@ figure {
 }
 
 .menu-vertical {
-    position: absolute;
-    display: none;
     list-style: none;
-    width: 200px;
-    background-color: blue;
-    top: 100%; /* Posición relativa al padre */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
     padding: 0;
     margin: 0;
+    z-index: 100;
 }
 
 .menu-horizontal li:hover .menu-vertical {
-    display: block; /* Mostrar el submenú al pasar el ratón */
+    display: block;
 }
 
 .menu-vertical li:hover {
-    background-color: rgb(13, 13, 82);
+    background-color: rgb(0, 64, 255);
 }
 
 .menu-vertical li a {
@@ -209,3 +93,130 @@ figure {
     padding: 15px 20px;
     text-align: center;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos al pasar el mouse sobre enlaces */
+nav a:hover {
+    color: yellow;
+}
+
+/* Ajustes para la búsqueda */
+.buscar {
+    width: 10%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos del contenedor de reseñas */
+    .container-reseñas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    }
+    
+    /* Estilos de las tarjetas */
+    
+    .card {
+    width: 20%;
+    margin: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #000000;
+    box-shadow: 0px 1px 10px rgba(204, 235, 31, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .card:hover {
+    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4);
+    transform: translateY(-3%);
+    }
+    
+    .card img {
+    width: 85%;
+    height: auto;
+    align-items: center;
+    padding-left: 7.5%;
+    }
+    
+    .card .container-reseñas img {
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .card .container-reseñas {
+    padding: 15px;
+    text-align: center;
+    }
+    
+    .card .container-reseñas h3 {
+    font-weight: 150;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    }
+    
+    .card .container-reseñas a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    }
+    
+    figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    
+    /* Estilos responsivos */
+    
+    @media (max-width: 680px) {
+    header {
+    flex-direction: column;
+    }
+    nav {
+    padding: 10px 0px;
+    }
+    .container-reseñas {
+    flex-direction: column;
+    justify-content: center;
+    }
+    .card {
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    }
+    }
+    
+    /* Estilos adicionales */
+    
+    .subtitulo {
+    padding-left: 30px;
+    font-size: 20px;
+    }
