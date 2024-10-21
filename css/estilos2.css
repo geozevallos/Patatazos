@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Elimina los márgenes y rellenos predeterminados de todos los elementos y asegura que el tamaño del cuadro incluya bordes y relleno */
+}
+
+body {
+    display: flex; /* Permite al cuerpo del documento comportarse como un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 200vh; /* Hace que la altura mínima del cuerpo sea el doble de la altura de la ventana del navegador */
+    background-color: darkblue;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.formulario-registro {
+    background-color: rgb(40, 40, 175);
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
+}
+
+
+
+.estrellas {
+    position: relative; /* Posiciona los elementos de las estrellas en relación con el contenedor */
+    display: flex; /* Hace que las estrellas se organicen en fila usando flexbox */
+    flex-direction: row-reverse; /* Coloca las estrellas en orden inverso, es decir, la última estrella primero */
+    padding: 10px; /* Añade un espacio interno (padding) de 20px alrededor del contenido dentro del contenedor */
+    gap: 10px; /* Define un espacio de 2px entre cada estrella (se puede ajustar este valor para más espacio) */
+    align-items: center;
+    justify-content: center;
+}
+
+.estrellas input {
+    display: none; /* Oculta los botones de radio para que no sean visibles */
+}
+
+.estrellas label {
+    font-size: 40px; /* Tamaño de la estrella (al ser un ícono de FontAwesome) */
+    color: #0f0647; /* Color predeterminado oscuro para las estrellas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la estrella, indicando que es clickeable */
+    transition: color 0.3s; /* Hace que el color de la estrella cambie suavemente en 0.3 segundos */
+    border-color: black;
+
+}
+
+.estrellas label:hover, 
+.estrellas label:hover ~ label, 
+.estrellas input:checked ~ label {
+    color: #fff; /* Cambia el color de las estrellas a blanco al pasar el mouse sobre ellas o al seleccionar una estrella */
+
+}
+.rellenar {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.controls {
+    width: 100%;
+    background-color: rgb(40, 40, 175);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid whitesmoke;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+#enviar {
+    background-color: #03A9F4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2%;
+}
+
+#enviar:hover {
+    transform: scale(1.05);
+    
+}
+
+#resetear {
+    background-color: rgb(221, 87, 9);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 4%;
+}
+
+#resetear:hover {
+    transform: scale(1.05);
+}
+
+i {
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#botones button {
+    transition: all 0.3s ease-in-out;
+}

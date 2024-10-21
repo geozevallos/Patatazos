@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribir Reseñas</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="formulario-registro">
+        <h1>Realizar Reseña</h1>
+        <form class="contenedor">
+
+            <div  class="estrellas">
+                <input required type="radio" name="clr1" id="s5" >
+                <label for="s5" class="fa-solid fa-star""></label>
+                <input type="radio" name="clr1" id="s4">
+                <label for="s4" class="fa-solid fa-star""></label>
+                <input type="radio" name="clr1" id="s3">
+                <label for="s3" class="fa-solid fa-star""></label>
+                <input type="radio" name="clr1" id="s2">
+                <label for="s2" class="fa-solid fa-star""></label>
+                <input type="radio" name="clr1" id="s1">
+                <label for="s1" class="fa-solid fa-star""></label>
+            </div>
+            <div class="rellenar">
+
+                <input required class="controls"  type="text"
+                    placeholder="Pelicula, ejemplo: Wiñaypacha" />
+            </div>
+
+            <div class="rellenar">
+                <input required class="controls"  type="text"  placeholder="Titulo de Reseña" />
+            </div>
+
+            <div class="rellenar">
+                <textarea class="controls"   style="height: 250px;"
+                    placeholder="Escribe una Reseña (opcional)"></textarea>
+            </div>
+
+            <div id="botones">
+                <button id="enviar" type="submit"> <i class="fas fa-paper-plane"></i>
+                    Publicar</button>
+                <button id="resetear" type="reset"><i class="fas fa-undo"></i>Reset</button>
+            </div>
+
+
+        </form>
+    </section>
+
+</body>
+
+</html>
