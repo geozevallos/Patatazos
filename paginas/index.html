@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelicula</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="film-banner">
+        <video src="../videos/video-pelicula.mp4" preload="auto" muted loop></video>
+
+        <div class="text-banner">
+          <h1>Hija de la Laguna</h1>
+          <p>2015 | <i class="bx bx-time-five"></i> 88 min.</p>
+          <button id="play-trailer"><i class="bx bx-play-circle"></i> Trailer</button>
+        </div>
+      </div>
+      <div class="main-content">
+        <article>
+          <section class="film-description">
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwXXMdojA5PveAKY-gElKYUovwi2KCFUzhw&s"
+                alt=""
+              />
+            </div>
+            <div class="card">
+              <div class="card-desc-header">
+                <div>Potatómetro 3/5 <i class='bx bxs-star'></i></div>
+                <div>50 Reseñas</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Nélida es una mujer de los Andes peruanos que habla con los espíritus del agua. El hallazgo de un yacimiento de oro amenaza con destruir la laguna que ella considera la Yakumama o Madre Agua. Para evitarlo, Nélida se suma a la lucha de los campesinos de la zona que temen quedarse sin agua, enfrentándolos a Yanacocha, la minera de oro más grande de Sudamérica.
+                </p>
+              </div>
+            </div>
+          </section>
+          <nav class="menu">
+            <ul>
+              <li>Reparto y equipo</li>
+              <li>Reseñas</li>
+              <li>Noticias relacionadas</li>
+              <li>Fotos</li>
+            </ul>
+          </nav>
+          <section class="actores-section">
+            <h3>REPARTO Y EQUIPO</h3>
+            <div class="img-actors-container">
+              <div class="img-actors">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqte1uePjmB-C5Q65_9P-iSUKhl3vpYYCkkg&s"
+                  alt="Fotografía de Nélida Ayay Chilón"
+                />
+                <p>Nélida Ayay Chilón</p>
+              </div>
+              <div class="img-actors">
+                <img
+                  src="https://www.bibivandervelden.com/cdn/shop/files/Bibi_PFW_Landing_Page_1200x.jpg?v=1663327610"
+                  alt="Fotografía de Bibi van der Velden"
+                />
+                <p>Bibi van der Velden</p>
+              </div>
+              <div class="img-actors">
+                <img
+                  src="https://conlaa.com/wp-content/uploads/2018/09/22-maxima-acuna.png"
+                  alt=""
+                />
+                <p>Máxima Acuña</p>
+              </div>
+              <div class="img-actors">
+                <img
+                  src="https://www.retinalatina.org/wp-content/uploads/2022/06/DIR-hijadelalaguna.png"
+                  alt="Fotografía de Ernesto Cabellos"
+                />
+                <p>Ernesto Cabellos</p>
+              </div>
+              <div class="img-actors">
+                <img
+                  src="https://www.retinalatina.org/wp-content/uploads/2022/10/DIR-loshelechos.png"
+                  alt="Fotografía de Antolín Prieto"
+                />
+                <p>Antolín Prieto</p>
+              </div>
+            </div>
+          </section>
+          <section class="reviews-container">
+            <h3>Reseña crítica</h3>
+            <article class="card-reviews-container">
+              <div class="card-review">
+                <div class="header-review">
+                  <figure>
+                    <img
+                      src="../imagenes/usuario.png"
+                      alt="avatar del usuario"
+                    />
+                  </figure>
+                  <p class="username">Usuario 55</p>
+                </div>
+                <div class="content-review">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi fugiat quis quisquam quod unde ratione voluptatem
+                    excepturi dolorem reprehenderit laudantium reiciendis
+                    eligendi, eveniet sint, quibusdam, voluptatibus rerum
+                    mollitia? Quidem, obcaecati?
+                  </p>
+                </div>
+                <div class="footer-review">
+                  <p>Calificacion 5/5 - 13/10/2024</p>
+                  <a href="">Reseña completa</a>
+                </div>
+              </div>
+            </article>
+          </section>
+        </article>
+        <aside>
+          <div><h3>Que ver</h3></div>
+          <div></div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- popup -->
+    <div class="popup">
+      <div class="popup-content">
+        <span class="cerrar">×</span>
+        <iframe
+          id="video-trailer"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/X17nGuSgcrE?si=cxYLlvpnfi-PTYOE&enablejsapi=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="../scripts/detalle.js"></script>
+  </body>
+</html>
