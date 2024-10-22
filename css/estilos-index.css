@@ -368,3 +368,21 @@ footer hr{
     text-align: center;
     padding: 15px;
 }
+
+
+.btn-sesion{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .btn-sesion a{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-sesion a:hover{
+    background-color: darkblue;
+  }
+  
