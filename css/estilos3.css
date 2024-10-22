@@ -30,15 +30,15 @@ body{
     box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
     background-color: white;
 }
-img{
+.reseña img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-img,p{
+.reseña img,p{
     padding: 10px;
 }
-p{
+.reseña p{
     position: relative;
     text-align: justify;
 }
@@ -101,12 +101,11 @@ p{
     padding-top: 4px;
 
 }
-span{
+.reseña span{
     font-size: 50px;
 }
-pre{
-    font-size: 50px;
-}
+
+
 .like-container input:checked + label {
     color: #0d00ff; /* Cambia el color del ícono al hacer clic */
 }
