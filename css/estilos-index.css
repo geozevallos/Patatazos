@@ -3,20 +3,13 @@
 }
 
 body {
-    font-family: sans-serif;
+
     margin: 0;
     background-color: rgb(17, 13, 141);
     overflow-x: hidden;
-    margin-top: 60px;
-    
-      
-}
 
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
+    font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;   
 }
 
 /* Estilos del header */
@@ -32,6 +25,12 @@ header {
     top: 0
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -48,13 +47,13 @@ header {
     font-size: 1.5em;
 }
 
-h2 {
+header h2 {
     padding-left: 0px;
     font-size: 40px;
     color: rgb(204, 204, 101);
     margin-left: 5px;
     margin-bottom: 10px;
-    margin-top: 10px;
+
 
 }
 
@@ -126,6 +125,21 @@ h2 {
 nav a:hover {
     color: yellow;
 }
+.btn-sesion{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .btn-sesion a{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-sesion a:hover{
+    background-color: darkblue;
+  }
 
 
 
@@ -376,21 +390,6 @@ footer hr{
 }
 
 
-.btn-sesion{
-    display: flex;
-    gap: 5px;
-  }
-  
-  .btn-sesion a{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-sesion a:hover{
-    background-color: darkblue;
-  }
 
 .btn-ver-mas{
     width: 80px;
@@ -405,4 +404,10 @@ footer hr{
     margin-top: 2px;
     cursor: pointer;
 }
-  
+#subtitulo1{
+    margin-top: 150px;
+}
+#subtitulo2{
+margin-top: 0;
+}
+    
