@@ -1,173 +1,293 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
 body {
-
-    background-color: darkblue;
+  background-color: darkblue;
+  font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
+  "Helvetica Neue", sans-serif;
 }
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    width: 100%;
+
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 40px;
+  }
+  
+  .nombre_empresa {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  /* Estilos del menú */
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Para expandir el espacio entre logo y menú */
+  
+  }
+  
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  
+  }
+  
+  .menu-horizontal li {
+    position: relative;
+  }
+  
+  .menu-horizontal  li  a {
+    display: block;
+    padding: 15px 48px;
+  }
+  
+  .menu-horizontal  li:hover {
+    background-color: blue;
+  }
+  
+  .menu-vertical {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    min-width: 100%;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+  
+  .menu-vertical li:hover {
+    background-color: rgb(13, 13, 82);
+  }
+  
+  .menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilos al pasar el mouse sobre enlaces */
+  nav a:hover {
+    color: yellow;
+  }
+
+/* Estilos al pasar el mouse sobre enlaces */
+nav a:hover {
+  color: yellow;
+}
+.btn-sesion {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-sesion a {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-sesion a:hover {
+  background-color: darkblue;
+}
+
+
+
+
+
+
 .formulario-registro h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    margin-left: 2%;
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-left: 2%;
 }
 
 .formulario-registro {
-    background-color: rgb(40, 40, 175);
-    width: 500px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
+  background-color: rgb(40, 40, 175);
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
 }
 
-
-
 .estrellas {
-    position: relative; /* Posiciona los elementos de las estrellas en relación con el contenedor */
-    display: flex; /* Hace que las estrellas se organicen en fila usando flexbox */
-    flex-direction: row-reverse; /* Coloca las estrellas en orden inverso, es decir, la última estrella primero */
-    padding: 10px; /* Añade un espacio interno (padding) de 20px alrededor del contenido dentro del contenedor */
-    gap: 10px; /* Define un espacio de 2px entre cada estrella (se puede ajustar este valor para más espacio) */
-    align-items: center;
-    justify-content: center;
+  position: relative; /* Posiciona los elementos de las estrellas en relación con el contenedor */
+  display: flex; /* Hace que las estrellas se organicen en fila usando flexbox */
+  flex-direction: row-reverse; /* Coloca las estrellas en orden inverso, es decir, la última estrella primero */
+  padding: 10px; /* Añade un espacio interno (padding) de 20px alrededor del contenido dentro del contenedor */
+  gap: 10px; /* Define un espacio de 2px entre cada estrella (se puede ajustar este valor para más espacio) */
+  align-items: center;
+  justify-content: center;
 }
 
 .estrellas input {
-    display: none; /* Oculta los botones de radio para que no sean visibles */
+  display: none; /* Oculta los botones de radio para que no sean visibles */
 }
 
 .estrellas label {
-    font-size: 40px; /* Tamaño de la estrella (al ser un ícono de FontAwesome) */
-    color: #0f0647; /* Color predeterminado oscuro para las estrellas */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la estrella, indicando que es clickeable */
-    transition: color 0.3s; /* Hace que el color de la estrella cambie suavemente en 0.3 segundos */
-    border-color: black;
-
+  font-size: 40px; /* Tamaño de la estrella (al ser un ícono de FontAwesome) */
+  color: #0f0647; /* Color predeterminado oscuro para las estrellas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la estrella, indicando que es clickeable */
+  transition: color 0.3s; /* Hace que el color de la estrella cambie suavemente en 0.3 segundos */
+  border-color: black;
 }
 
-.estrellas label:hover, 
-.estrellas label:hover ~ label, 
+.estrellas label:hover,
+.estrellas label:hover ~ label,
 .estrellas input:checked ~ label {
-    color: #fff; /* Cambia el color de las estrellas a blanco al pasar el mouse sobre ellas o al seleccionar una estrella */
-
+  color: #fff; /* Cambia el color de las estrellas a blanco al pasar el mouse sobre ellas o al seleccionar una estrella */
 }
 .rellenar {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 16px;
-    width: 100%;
-    padding: 10px;
-    font-family: 'calibri';
-    font-size: 18px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 10px;
+  font-family: "calibri";
+  font-size: 18px;
 }
 
 .controls {
-    width: 100%;
-    background-color: rgb(40, 40, 175);
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid whitesmoke;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
+  width: 100%;
+  background-color: rgb(40, 40, 175);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid whitesmoke;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
 }
 
 .contenedor button {
-    width: 50%;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 10px;
-    border: none;
-    font-size: 16px;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
 }
 #enviar {
-    background-color: #03A9F4;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin-left: 2%;
+  background-color: #03a9f4;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2%;
 }
 
 #enviar:hover {
-    transform: scale(1.05);
-    
+  transform: scale(1.05);
 }
 
 #resetear {
-    background-color: rgb(221, 87, 9);
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin-left: 4%;
+  background-color: rgb(221, 87, 9);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 4%;
 }
 
 #resetear:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .contenedor i {
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 #botones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #botones button {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
-
 
 /*Footer estilos*/
 
-footer{
-    font-size:1em;
-    color:#30b0e5;
-    text-align:left;
-    margin: left 0.35em;
-    display: block;
-    unicode-bidi: isolate;
-    border-top: auto auto;
-    max-width: 99%px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #020648;
-    justify-content: space-around;
-    align-items: center;
-       
-
+footer {
+  font-size: 1em;
+  color: #30b0e5;
+  text-align: left;
+  margin: left 0.35em;
+  display: block;
+  unicode-bidi: isolate;
+  border-top: auto auto;
+  max-width: 99%px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #020648;
+  justify-content: space-around;
+  align-items: center;
 }
-footer hr{
-    max-width: 99%;
-    margin-left: 1%; 
-
+footer hr {
+  max-width: 99%;
+  margin-left: 1%;
 }
 
-
-.titulo-footer{
-    margin-top: 50px;
-    font-weight: bold;
-    margin-left: 1%;   
-    padding-top: 15px;
-
-
+.titulo-footer {
+  margin-top: 50px;
+  font-weight: bold;
+  margin-left: 1%;
+  padding-top: 15px;
 }
-.redes{
-    display: inline-block;
+.redes {
+  display: inline-block;
 
-    margin-left: 1%;
-
-
+  margin-left: 1%;
 }
-.aviso{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.aviso {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
