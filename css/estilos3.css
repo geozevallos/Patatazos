@@ -1,8 +1,9 @@
 *{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 body{
-    background-color: darkblue
+    background-color: darkblue;
 }
 .titulo-pagina{
     background-color: white;
@@ -43,13 +44,14 @@ body{
     text-align: justify;
 }
 .like-container {
+    width: 70%;
     display: flex;
     position: absolute;
     padding-top: 20px;
     bottom:  7%;
     left: 158px;
-
-    
+    align-items: center;
+    justify-content: space-between;
 }
 .like-contenedor input{
     display: none;
@@ -163,4 +165,142 @@ footer hr{
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+
+
+
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    width: 100%;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 40px;
+  }
+  
+  .nombre_empresa {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  /* Estilos del menú */
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Para expandir el espacio entre logo y menú */
+  
+  }
+  
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  
+  }
+  
+  .menu-horizontal li {
+    position: relative;
+  }
+  
+  .menu-horizontal  li  a {
+    display: block;
+    padding: 15px 48px;
+  }
+  
+  .menu-horizontal  li:hover {
+    background-color: blue;
+  }
+  
+  .menu-vertical {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    min-width: 100%;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+  
+  .menu-vertical li:hover {
+    background-color: rgb(13, 13, 82);
+  }
+  
+  .menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilos al pasar el mouse sobre enlaces */
+  nav a:hover {
+    color: yellow;
+  }
+  
+  
+  .btn-sesion{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .btn-sesion a{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-sesion a:hover{
+    background-color: darkblue;
+  }
+  
+  
+  .btn-ver-mas{
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(249, 87, 56, 0.8);
+    padding: 5px;
+    margin-top: 2px;
+    cursor: pointer;
 }
