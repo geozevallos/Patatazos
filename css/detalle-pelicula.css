@@ -1,7 +1,9 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+  padding:0;
+
+
 }
 
 html{
@@ -9,6 +11,7 @@ html{
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   display: flex;
@@ -312,8 +315,17 @@ header {
   padding: 10px 20px;
   background-color: #000000;
   width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -330,11 +342,14 @@ header {
   font-size: 1.5em;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: bold;
+header h2 {
+  padding-left: 0px;
+  font-size: 40px;
+  color: rgb(204, 204, 101);
+  margin-left: 5px;
+  margin-bottom: 10px;
+
+
 }
 
 /* Estilos del menú */
@@ -405,6 +420,21 @@ a {
 nav a:hover {
   color: yellow;
 }
+.btn-sesion{
+  display: flex;
+  gap: 5px;
+}
+
+.btn-sesion a{
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-sesion a:hover{
+  background-color: darkblue;
+}
 
 
 
@@ -449,19 +479,4 @@ hr{
   padding: 15px;
 }
 
-.btn-sesion{
-  display: flex;
-  gap: 5px;
-}
-
-.btn-sesion a{
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-sesion a:hover{
-  background-color: darkblue;
-}
 

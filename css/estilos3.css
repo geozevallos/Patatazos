@@ -1,17 +1,21 @@
 *{
-  box-sizing: border-box;
+  margin:0;
+  box-sizing:border-box;
+  padding:0;
 }
 
 body {
-  font-family: sans-serif;
+
   margin: 0;
   background-color: rgb(17, 13, 141);
   overflow-x: hidden;
-  margin-top: 60px;
+
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
   "Helvetica Neue", sans-serif;   
 }
-
+main{
+  margin-top: 150px;
+}
 /* Estilos del header */
 header {
   display: flex;
@@ -24,7 +28,8 @@ header {
   z-index: 1000;
   top: 0
 }
-a {
+
+header a {
   color: white;
   text-decoration: none;
   font-size: 1em;
@@ -46,13 +51,13 @@ a {
   font-size: 1.5em;
 }
 
-h2 {
+header h2 {
   padding-left: 0px;
   font-size: 40px;
   color: rgb(204, 204, 101);
   margin-left: 5px;
   margin-bottom: 10px;
-  margin-top: 10px;
+
 
 }
 
@@ -140,9 +145,14 @@ nav a:hover {
   background-color: darkblue;
 }
 
+
+
+
+
+
 .titulo-pagina{
     background-color: white;
-    color: darkblue;
+    color: rgb(0, 0, 255);
     text-align: center;
 }
 .contenedor-titulo{
@@ -187,16 +197,20 @@ nav a:hover {
     left: 158px;
     align-items: center;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .like-contenedor input{
     display: none;
+    margin-top: 100px;
 }
 
 .like-container input {
     display: none; /* Oculta el checkbox */
+    margin-top: 100px;
 }
 .contenedor-like input{
     display: none;
+    
 }
 
 .like-container label {
@@ -321,4 +335,8 @@ footer hr{
     padding: 5px;
     margin-top: 2px;
     cursor: pointer;
+}
+
+.reseña p{
+  margin-bottom: 20px;
 }
