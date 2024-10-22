@@ -148,20 +148,12 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Estilos del contenedor de reseñas */
+
 .container-resenas {
     width: 100%;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -170,7 +162,7 @@ nav a:hover {
 
 /* Estilos de las tarjetas */
 .card {
-    width: 15%; /* Tamaño de la tarjeta */
+    width: 280px; /* Tamaño de la tarjeta */
     margin: 15px;
     border-radius: 6px;
     background: #000; /* Fondo negro */
@@ -195,7 +187,7 @@ nav a:hover {
     height: 300px;
     align-items: center;
     justify-content: center;
-    padding-left: 4px;
+    padding-left: 10px;
     margin-top: 15px;
     
     
