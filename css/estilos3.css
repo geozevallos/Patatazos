@@ -30,15 +30,15 @@ body{
     box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
     background-color: white;
 }
-img{
+.reseña img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-img,p{
+.reseña img,p{
     padding: 10px;
 }
-p{
+.reseña p{
     position: relative;
     text-align: justify;
 }
@@ -101,12 +101,11 @@ p{
     padding-top: 4px;
 
 }
-span{
+.reseña span{
     font-size: 50px;
 }
-pre{
-    font-size: 50px;
-}
+
+
 .like-container input:checked + label {
     color: #0d00ff; /* Cambia el color del ícono al hacer clic */
 }
@@ -119,3 +118,49 @@ strong{
     font-size: 20px;
 }
 
+/*Footer estilos*/
+
+footer{
+    font-size:1em;
+    color:#30b0e5;
+    text-align:left;
+    margin: left 0.35em;
+    display: block;
+    unicode-bidi: isolate;
+    border-top: auto auto;
+    max-width: 99%px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #020648;
+    justify-content: space-around;
+    align-items: center;
+       
+
+}
+footer hr{
+    max-width: 99%;
+    margin-left: 1%; 
+
+}
+
+
+.titulo-footer{
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 1%;   
+    padding-top: 15px;
+
+
+}
+.redes{
+    display: inline-block;
+
+    margin-left: 1%;
+
+
+}
+.aviso{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

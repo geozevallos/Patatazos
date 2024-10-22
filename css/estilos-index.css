@@ -254,9 +254,9 @@ figure {
     margin: 20px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
-    background-color: white;
+    background-color: rgb(6, 0, 112);
 }
 
 .resena-img {
@@ -288,7 +288,7 @@ figure {
 
 .like-contenedor label {
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -296,7 +296,7 @@ figure {
 .like-contenedor label span {
     font-size: 15px;
     margin-left: 5px;
-    color: #000000;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
@@ -305,11 +305,11 @@ figure {
 }
 
 .like-contenedor input:checked + label {
-    color: #0d00ff;
+    color: #00d5ff;
 }
 
 .like-contenedor input:checked + label span {
-    color: #000dff;
+    color: #00d5ff;
 }
 
 strong {
@@ -340,7 +340,7 @@ footer{
        
 
 }
-hr{
+footer hr{
     max-width: 99%;
     margin-left: 1%; 
 
