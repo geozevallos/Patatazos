@@ -130,6 +130,7 @@ h1, h2{
     border-radius: 30px;
     color: white;
     background-color: rgba(249, 87, 56, 0.8);
+    cursor: pointer;
 }
 
 .titulo-pelicula{
