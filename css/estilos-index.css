@@ -7,6 +7,9 @@ body {
     margin: 0;
     background-color: rgb(17, 13, 141);
     overflow-x: hidden;
+    margin-top: 60px;
+    
+      
 }
 
 a {
@@ -24,6 +27,9 @@ header {
     padding: 10px 20px;
     background-color: #000000;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0
 }
 
 .logo-container {
