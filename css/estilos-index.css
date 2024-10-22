@@ -162,10 +162,10 @@ nav a:hover {
 
 /* Estilos de las tarjetas */
 .card {
-    width: 280px; /* Tamaño de la tarjeta */
+    width: 280px; 
     margin: 15px;
     border-radius: 6px;
-    background: #000; /* Fondo negro */
+    background-color: #000; 
     box-shadow: 0px 1px 10px rgba(204, 235, 31, 0.2); /* Sombra inicial */
     overflow: hidden;
     transition: all 0.4s ease; /* Transición suave */
@@ -178,7 +178,7 @@ nav a:hover {
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4); /* Sombra al hacer hover */
+    box-shadow: 5px 5px 20px rgba(222, 247, 4, 0.4); 
     transform: translateY(-3%); /* Efecto de levantar */
 }
 
@@ -195,13 +195,13 @@ nav a:hover {
 
 /* Estilos de los títulos h3 dentro de las tarjetas */
 .card .contenido h3 {
-    width: 100%;/* Ocupan más espacio dentro de la tarjeta */
-    margin: 0 0; /* Centrado horizontalmente */
-    text-align: center; /* Texto centrado */
-    color: aliceblue; /* Color del texto */
-    padding: 10px 0; /* Espaciado vertical */
-    font-weight: bold; /* Grosor del texto */
-    font-size: 1.1em; /* Tamaño del texto */
+    width: 100%;
+    margin: 0 0;
+    text-align: center;
+    color: aliceblue; 
+    padding: 10px 0; 
+    font-weight: bold; 
+    font-size: 1.1em; 
 }
 
 /* Estilos del enlace que envuelve el h3 */
@@ -228,7 +228,7 @@ figure {
     }
 
     .card {
-        width: 80%; /* Las tarjetas ocupan más espacio en pantallas pequeñas */
+        width: 80%; 
     }
 }
 

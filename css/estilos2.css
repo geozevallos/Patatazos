@@ -166,31 +166,31 @@ nav a:hover {
 }
 
 .estrellas {
-  position: relative; /* Posiciona los elementos de las estrellas en relación con el contenedor */
-  display: flex; /* Hace que las estrellas se organicen en fila usando flexbox */
-  flex-direction: row-reverse; /* Coloca las estrellas en orden inverso, es decir, la última estrella primero */
-  padding: 10px; /* Añade un espacio interno (padding) de 20px alrededor del contenido dentro del contenedor */
-  gap: 10px; /* Define un espacio de 2px entre cada estrella (se puede ajustar este valor para más espacio) */
+  position: relative; 
+  display: flex; 
+  flex-direction: row-reverse; 
+  padding: 10px; 
+  gap: 10px; 
   align-items: center;
   justify-content: center;
 }
 
 .estrellas input {
-  display: none; /* Oculta los botones de radio para que no sean visibles */
+  display: none; 
 }
 
 .estrellas label {
-  font-size: 40px; /* Tamaño de la estrella (al ser un ícono de FontAwesome) */
-  color: #0f0647; /* Color predeterminado oscuro para las estrellas */
-  cursor: pointer; /* Cambia el cursor al pasar sobre la estrella, indicando que es clickeable */
-  transition: color 0.3s; /* Hace que el color de la estrella cambie suavemente en 0.3 segundos */
+  font-size: 40px; 
+  color: #0f0647; 
+  cursor: pointer; 
+  transition: color 0.3s; 
   border-color: black;
 }
 
 .estrellas label:hover,
 .estrellas label:hover ~ label,
 .estrellas input:checked ~ label {
-  color: #fff; /* Cambia el color de las estrellas a blanco al pasar el mouse sobre ellas o al seleccionar una estrella */
+  color: #fff;
 }
 .rellenar {
   display: flex;
